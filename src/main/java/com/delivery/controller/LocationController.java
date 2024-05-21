@@ -18,7 +18,7 @@ public class LocationController {
 	@Autowired
 	private KafkaService kafkaService;
 	
-	@PostMapping("/update location")
+	@PostMapping("/update")
 	public ResponseEntity<?> updateLocation(){
 		
 		this.kafkaService.updateLocation("( "+Math.round(Math.random()*1000)+""+" ,  "+Math.round(Math.random()*1000)+")");
