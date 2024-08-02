@@ -21,7 +21,7 @@ public class LocationController {
 	@PostMapping("/update")
 	public ResponseEntity<?> updateLocation(){
 		
-		this.kafkaService.updateLocation("( "+Math.round(Math.random()*1000)+""+" ,  "+Math.round(Math.random()*1000)+")");
+//		this.kafkaService.updateLocation("( "+Math.round(Math.random()*1000)+""+" ,  "+Math.round(Math.random()*1000)+")");
 		return new ResponseEntity<>(Map.of(" message","Location updated."),HttpStatus.OK);
 		
 	}
